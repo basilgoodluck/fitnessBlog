@@ -71,7 +71,6 @@ body{
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .body video{
@@ -96,6 +95,9 @@ body{
     font-weight: 500;
     font-size: 1.5rem;
     color: white;
+}
+.body .homeContent{
+    text-align: left;
 }
 .body .homeContent a{
     display: inline-block;
@@ -126,4 +128,14 @@ body{
     padding: 5px;
     text-decoration: none;
     border-radius: 3px;
+}
+.joinUsSection{
+    background: linear-gradient(rgba(0, 150, 0, 0.7), rgba(0, 150, 0, 0.7)), url("/assets/images/bgT.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.joinUsSection .joinUsContent h1{
+    color: white;
+    
 }
