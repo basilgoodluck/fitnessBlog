@@ -23,17 +23,23 @@
         <video autoplay loop muted plays-inline>
             <source src="/assets/images/bgV.mp4">
         </video>
-        <div class="headSection">
-            <div class="headContainer d-flex container">
+        <div class="headSection shadow">
+            <div class="headContainer d-flex container justify-content-between align-items-center">
                 <div class="logo">
-                    <h1>Logo</h1>
+                    <h1>Live<span>Well</span></h1>
                 </div>
                 <div class="navBar">
-
+                    <ul style="list-style-type: none;" class=" d-flex justify-content- align-items-center">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="homeContent">
             <h1>
                 A damn <span>Fitness Blog</span>
             </h1>
@@ -41,11 +47,6 @@
             <a href="">Get a quote</a>
         </div>
     </div>
-    <script>
-        var loader = document.querySelector(".loader-container")
-        window.addEventListener("load", ()=>{
-            loader.style.display = "none"
-        })
-    </script>
+    <script type="module" src="/assets/script.js"></script>
 </body>
 </html>

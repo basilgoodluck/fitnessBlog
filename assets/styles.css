@@ -97,10 +97,10 @@ body{
     font-size: 1.5rem;
     color: white;
 }
-.body a{
+.body .homeContent a{
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: orangered;
+    color: white;
     padding: 10px;
     text-decoration: none;
     border-radius: 3px;
@@ -111,7 +111,19 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 0;
+    background: linear-gradient(rgba(0, 100, 0, 0.4), rgba(0, 100, 0, 0.4));
 }
-.headSection h1{
-    color: green;
+.headSection h1 span{
+    color: orangered;
+}
+.body .headSection li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.body .headSection li a{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
 }
