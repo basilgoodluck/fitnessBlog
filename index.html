@@ -10,9 +10,18 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="load-container">
+        <div class="loader-container">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+            <div class="square4"></div>
+            <div class="square5"></div>
+          </div>
+    </div>
     <div class="body">
         <video autoplay loop muted plays-inline>
-            <source src="/assets/images/042e8840-1ad4-4421-84c3-b3c33a5d0257.mp4">
+            <source src="/assets/images/bgV.mp4">
         </video>
         <div class="headSection">
             <div class="headContainer d-flex container">
@@ -32,5 +41,11 @@
             <a href="">Get a quote</a>
         </div>
     </div>
+    <script>
+        var loader = document.querySelector(".loader-container")
+        window.addEventListener("load", ()=>{
+            loader.style.display = "none"
+        })
+    </script>
 </body>
 </html>
