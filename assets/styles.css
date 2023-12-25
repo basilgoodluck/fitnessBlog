@@ -89,6 +89,8 @@ body{
   font-weight: 900;
   font-size: 3rem;
   color: white;
+  z-index: 9999;
+  cursor: pointer;
 }
 .body h1 span{
   color: green;
@@ -116,6 +118,7 @@ body{
   width: 100%;
   padding: 20px 0;
   background: linear-gradient(rgba(0, 100, 0, 0.4), rgba(0, 100, 0, 0.4));
+  z-index: 9999;
 }
 .headSection h1 span{
     color: orangered;
@@ -123,8 +126,6 @@ body{
 .body .headSection li{
   display: inline;
   margin-right: 20px;
-  background-color: orangered;
-  cursor: pointer;
 }
 .headSection li a{
   cursor: pointer;
@@ -142,4 +143,25 @@ body{
 .joinUsSection .joinUsContent h1{
   color: white;
     
+}
+.joinUsContent .actionHomeContent{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  border-right: 5px solid rgba(0, 150, 0, 0.7);
+  border-radius: 5px;
+}
+.joinUsContent .lastAction{
+  border-right: 0;
+}
+.joinUsContent .aboutOnHome .mission i{
+  color: orangered;
+  font-size: 20px;
+}
+.joinUsContent .aboutOnHome .learnMore a{
+  display: inline-block;
+  background-color: orangered;
+  text-decoration: none;
+  padding: 10px;
+}
+.blogOnHome{
+  height: 100vh;
 }
