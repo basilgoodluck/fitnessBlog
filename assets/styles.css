@@ -105,7 +105,7 @@ body{
 }
 .body .homeContent a{
   display: inline-block;
-  background-color: orangered;
+  background-color: #f00;
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -121,7 +121,7 @@ body{
   z-index: 9999;
 }
 .headSection h1 span{
-    color: orangered;
+    color: #f00;
 }
 .body .headSection li{
   display: inline;
@@ -153,12 +153,12 @@ body{
   border-right: 0;
 }
 .joinUsContent .aboutOnHome .mission i{
-  color: orangered;
+  color: #f00;
   font-size: 20px;
 }
 .joinUsContent .aboutOnHome .learnMore a{
   display: inline-block;
-  background-color: orangered;
+  background-color: #f00;
   text-decoration: none;
   padding: 10px;
 }
