@@ -68,7 +68,7 @@ body{
   }
 }
 .body{
-  background: linear-gradient(rgba(1, 1, 17, 0.8), rgba(1, 1, 17, 0.8));
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
   height: 100vh;
   width: 100%;
   position: relative;
@@ -88,7 +88,7 @@ body{
 .body h1{
   font-weight: 900;
   font-size: 3rem;
-  color: white;
+  color: green;
   z-index: 9999;
   cursor: pointer;
 }
@@ -98,7 +98,7 @@ body{
 .body p{
   font-weight: 500;
   font-size: 1.5rem;
-  color: white;
+  color: green;
 }
 .body .homeContent{
   text-align: left;
@@ -117,8 +117,12 @@ body{
   left: 0;
   width: 100%;
   padding: 20px 0;
-  background: linear-gradient(rgba(0, 100, 0, 0.4), rgba(0, 100, 0, 0.4));
+  /* background: linear-gradient(rgba(0, 100, 0, 0.8), rgba(0, 100, 0, 0.8)); */
+  background-color: transparent;
   z-index: 9999;
+}
+.headSection h1{
+  color: #fff;
 }
 .headSection h1 span{
     color: #f00;
@@ -129,11 +133,18 @@ body{
 }
 .headSection li a{
   cursor: pointer;
-  color: white;
+  color: #f00;
+  opacity: .5;
   padding: 5px;
   text-decoration: none;
   border-radius: 3px;
+  font-size: 30px;
+  transition: .87s ease;
 }
+.headSection li a:hover, .headSection li a.active{
+  opacity: .9;
+}
+
 .joinUsSection{
   background: linear-gradient(rgba(0, 150, 0, 0.7), rgba(0, 150, 0, 0.7)), url("/assets/images/bgT.jpeg");
   background-repeat: no-repeat;
@@ -164,4 +175,7 @@ body{
 }
 .blogOnHome{
   height: 100vh;
+}
+.blogOnHome .container{
+  background: #f0fff0;
 }
