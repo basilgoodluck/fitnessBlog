@@ -173,9 +173,52 @@ body{
   text-decoration: none;
   padding: 10px;
 }
-.blogOnHome{
-  height: 100vh;
+.blogOnHome > h1{
+  font-weight: 900;
+  text-align: center;
+  color: green;
 }
-.blogOnHome .container{
-  background: #f0fff0;
+.blogOnHome .container .row h1{
+  color: green;
+}
+.blogOnHome .container .row p{
+  font-size: 30px;
+  font-weight: 500;
+  color: #444;
+}
+.blogOnHome .container .row a{
+  padding: 15px;
+  background-color: #444;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#recent{
+  height: 400px;
+  width: 300px;
+  overflow-y: scroll;
+  display: inline-block;
+  /* background-color: green; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #eee;
+  overflow-x: scroll;
+}
+#recent ul{
+  /* list-style-type: none; */
+}
+#recent ul li{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  
+}
+#recent ul li a{
+  padding: 0;
+  color: #444;
+  background-color: transparent;
+  text-decoration: none;
+
 }
