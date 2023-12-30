@@ -88,7 +88,7 @@ body{
 .body h1{
   font-weight: 900;
   font-size: 3rem;
-  color: green;
+  color: white;
   z-index: 9999;
   cursor: pointer;
 }
@@ -98,7 +98,7 @@ body{
 .body p{
   font-weight: 500;
   font-size: 1.5rem;
-  color: green;
+  color: white;
 }
 .body .homeContent{
   text-align: left;
@@ -106,6 +106,7 @@ body{
 .body .homeContent a{
   display: inline-block;
   background-color: #f00;
+  cursor: pointer;
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -133,7 +134,7 @@ body{
 }
 .headSection li a{
   cursor: pointer;
-  color: #f00;
+  color: #fff;
   opacity: .5;
   padding: 5px;
   text-decoration: none;
@@ -203,7 +204,9 @@ body{
   font-weight: 100;
 }
 .newsletterSection{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/bgT.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/bgT.jpeg"); */
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  background-color: green;
+  color: white;
 }
