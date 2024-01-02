@@ -3,6 +3,7 @@ var loader = document.querySelector(".loader-container")
 
 window.addEventListener("load", ()=>{
     loader.style.display = "none"
+    loader.style.zIndex = "0"
     document.body.style.overflowY = "scroll"
     window.scrollTo({
         top: 0,
