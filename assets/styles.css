@@ -8,6 +8,9 @@
     border: 0;
 }
 
+.section{
+  overflow-x: hidden;
+}
 body{
     background: green;
     position: relative;
