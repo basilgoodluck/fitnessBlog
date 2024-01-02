@@ -11,6 +11,9 @@
 .section{
   overflow-x: hidden;
 }
+.loadSectionOverY{
+  overflow: hidden;
+}
 body{
     background: green;
     position: relative;
