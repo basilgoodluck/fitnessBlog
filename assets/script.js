@@ -2,8 +2,8 @@
 var loader = document.querySelector(".loader-container")
 
 window.addEventListener("load", ()=>{
-    var header = document.getElementById("body").top
     loader.style.display = "none"
+    document.body.style.overflow = "hidden"
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
