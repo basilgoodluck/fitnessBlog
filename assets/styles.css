@@ -12,6 +12,7 @@ body{
     background: green;
     position: relative;
     overflow-x: hidden;
+    font-family: poppins;
 }
 .load-container{
     display: flex;
@@ -92,6 +93,14 @@ body{
   z-index: 9999;
   cursor: pointer;
 }
+.body .homeContent h1{
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+  z-index: 9999;
+  cursor: pointer;
+  animation: dropDownText 3s ease 1s;
+}
 .body h1 span{
   color: green;
 }
@@ -99,6 +108,9 @@ body{
   font-weight: 500;
   font-size: 1.5rem;
   color: white;
+  /* visibility: hidden; */
+  animation: slideTextFromRight 1s linear;
+
 }
 .body .homeContent{
   text-align: left;
@@ -111,6 +123,7 @@ body{
   padding: 10px;
   text-decoration: none;
   border-radius: 3px;
+  animation: moveUpText 3s ease 1s;
 }
 .headSection{
   position: absolute;
@@ -233,4 +246,39 @@ body{
   background-color: #f00;
   font-size: 14px;
   border-radius: 0 10px 10px 0;
+}
+
+
+
+
+/***********************Animations for the page***********************/
+
+@keyframes dropDownText {
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideTextFromRight {
+  from{
+    transform: translateX(20%);
+    visibility: visible;
+    opacity: 0.3;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUpText {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
 }
