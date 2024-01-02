@@ -6,6 +6,7 @@
     box-sizing: border-box;
     outline: 0;
     border: 0;
+    scroll-behavior: smooth;
 }
 
 .section{
@@ -17,8 +18,9 @@
 body{
     background: green;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: poppins;
+    scroll-behavior: smooth;
 }
 .load-container{
     display: flex;

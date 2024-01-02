@@ -3,7 +3,7 @@ var loader = document.querySelector(".loader-container")
 
 window.addEventListener("load", ()=>{
     loader.style.display = "none"
-    document.body.style.overflow = "hidden"
+    document.body.style.overflowY = "scroll"
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
