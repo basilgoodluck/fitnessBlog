@@ -107,7 +107,6 @@ body{
   color: white;
   z-index: 9999;
   cursor: pointer;
-  animation: dropDownText 3s ease 1s;
 }
 .body h1 span{
   color: green;

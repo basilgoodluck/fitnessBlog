@@ -10,15 +10,16 @@ window.addEventListener("load", ()=>{
     });
 })
 
+let options = {
+    root: document.querySelector(".homeContent"),
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+  
+  let observer = new IntersectionObserver(() => {
+    document.querySelector(".homeContent h1").style.animation = "dropDownText 3s ease 1s"
+  }, options);
+  
+  observer.observe(document.querySelector(".homeContent h1"))
 
-
-
-// const sections = document.querySelectorAll('section');
-
-//     const observer = new IntersectionObserver(entries => {
-//       entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add('visible');
-//         } else {
-//           entry.target.classList.remove('visible');
-//         }
+console.log(document.querySelector('.body').getBoundingClientRect())
