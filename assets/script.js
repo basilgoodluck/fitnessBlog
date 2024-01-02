@@ -18,8 +18,9 @@ let options = {
   
   let observer = new IntersectionObserver(() => {
     document.querySelector(".homeContent h1").style.animation = "dropDownText 3s ease 1s"
+    document.querySelector('.mission').style.animation = "moveUpText 3s ease 1s"
   }, options);
   
   observer.observe(document.querySelector(".homeContent h1"))
 
-console.log(document.querySelector('.body').getBoundingClientRect())
+  observer.observe(document.querySelector('.mission'))
