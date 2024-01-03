@@ -19,9 +19,15 @@ let options = {
   
   let observer = new IntersectionObserver(() => {
     document.querySelector(".homeContent h1").style.animation = "dropDownText 3s ease 1s"
-    document.querySelector('.mission').style.animation = "moveUpText 3s ease 1s"
+    // document.querySelector('.mission').style.animation = "moveUpText 3s ease 1s"
   }, options);
   
   observer.observe(document.querySelector(".homeContent h1"))
 
-  observer.observe(document.querySelector('.mission'))
+  // observer.observe(document.querySelector('.mission'))
+
+
+document.querySelector('.btn').addEventListener('click', (btn)=>{
+  document.querySelector('.btn').classList.toggle('toggledhamburger')
+
+})

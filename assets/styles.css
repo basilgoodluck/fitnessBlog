@@ -120,6 +120,7 @@ body{
 .body .homeContent{
   text-align: left;
 }
+
 .body .homeContent a{
   display: inline-block;
   background-color: #f00;
@@ -179,6 +180,9 @@ body{
 }
 .joinUsContent .lastAction{
   border-right: 0;
+}
+.mission, .vision{
+  animation: dropDownText 2s ease-out infinite;
 }
 .joinUsContent .aboutOnHome .mission i{
   color: #f00;
@@ -258,7 +262,7 @@ body{
 
 @keyframes dropDownText {
   from{
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
   to{
     transform: translateY(0);
@@ -284,4 +288,45 @@ body{
   to{
     transform: translateY(0%);
   }
+}
+
+
+/*CSS for the hamburger icon*/
+
+
+.hamburgerMenuSection{
+  /* display: none; */
+}
+.hamburgerMenuSection button{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 30px;
+  /* width: 40px; */
+}
+.hamburgerMenuSection button span{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.hamburgerMenuSection button span::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  right: 0;
+  border-radius: 2px;
+  background-color: white;
+}
+.hamburgerMenuSection button span:nth-child(2)::after{
+  width: 70%;
+}
+
+@media screen and (max-width: 988px) {
+  .navBar{
+    display: none;
+  }
+  
 }
